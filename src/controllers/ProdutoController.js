@@ -4,7 +4,7 @@ module.exports = {
 
     async cadastrar (request, response) {
         const { nome, categoria, preco, estoque, unidade, marca, descricao } = request.body
-     try {
+     try{
             await conexao ('produtos').insert({
           nome,
           categoria,
